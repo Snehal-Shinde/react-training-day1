@@ -5,14 +5,16 @@ import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
 // react component
 import App from './App';
 import SimpleComponent from './components/simplecomponent';
- import ProductFormComponent from './components/productcomponent/productformcomponent';
+import ProductFormComponent from './components/productcomponent/productformcomponent';
+import ProductHookCompponent from './hooks/producthookcomponent';
+import FormValidationComponent from './components/validations/validationcomponents';
 import * as serviceWorker from './serviceWorker';
 
 const message = 'Hi from Index';
 // the rendering of the Component
 ReactDOM.render(
   <React.StrictMode>
-    <ProductFormComponent/>
+    <FormValidationComponent/>
   </React.StrictMode>,
   document.getElementById('root')
 );
